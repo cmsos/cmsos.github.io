@@ -21,8 +21,8 @@
 
 <h2><a name="molcry.geo.cif">Molecular crystal CIF refinement</a></h2>
 <ul>
-<li>Use <code>MolMod/exam_cif2xyz.mw</code>, see <a href="../maple/MolMod/index.html">MolMod package</a>.</li>
-<li>Create CIF draft according to <a href="../soft/template2.cif">this template</a>.</li>
+<li>Use <code>MolMod/exam_cif2xyz.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
+<li>Create CIF draft according to <a href="template2.cif">this template</a>.</li>
 <li>Preprocess CIF draft:
   <ul>
   <li>Generate entire molecule and move it (to the origin if possible).</li>
@@ -49,7 +49,7 @@
 
 <h2><a name="molcry.geo.opt">Molecular crystal geometry optimization</a></h2>
 <ul>
-<li>Use <code>MolMod/exam_vas.mw</code>, see <a href="../maple/MolMod/index.html">MolMod package</a>.</li>
+<li>Use <code>MolMod/exam_vas.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
 <li>Start with refined CIF (<a href="exam_exp.cif">example</a>) converted to XYZ (<a href="exam_exp.xyz">example</a>).</li>
 <li>Each disorder group requires separate optimization.</li>
 <li>Use PBE-D3/PAW as optimal trade-off between accuracy and complexity.</li>
@@ -112,7 +112,7 @@
 
 <h2><a name="ecg">Electronic coarse-graining of insulators</a></h2>
 <ul>
-<li>Use <code>ECG.mw</code> or <code>MolMod/LocalizeMO.mw</code>, see <a href="../maple/MolMod/index.html">MolMod package</a>.</li>
+<li>Use <code>ECG.mw</code> or <code>MolMod/LocalizeMO.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
 <li>PBC are supported only at Gamma point (supercell approach).</li>
 <li>Fragmentize system, identify repeating fragments (monomers), and save to file following quantities:
     1) fragments as <code>F=list(list(atom#))</code>;
@@ -142,7 +142,7 @@
 
 <h2><a name="molcry.ecg">Calculation of coarse-grained electronic Hamiltonian for molecular crystal in multimer approximation</a></h2>
 <ul>
-<li>Use <code>MolMod/_exam_Heff.mw</code>, see <a href="../maple/MolMod/index.html">MolMod package</a>.</li>
+<li>Use <code>MolMod/_exam_Heff.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
 <li>Make sure that the crystal structure file contains information about symmetry and partitioning of the crystal into molecules:
     <code>SG=name, nm=number</code></li>
 <li>At the accuracy level of dimer approximation, it is usually enough to consider hydrogen-passivated pi-conjugated backbones instead of entire molecules.</li>
@@ -158,7 +158,7 @@
     For each calculation save out,evc,evr,evl files for frontier orbitals (let say, 8 MOs per band per monomer + 2 extra orbitals).</li>
 <li>Step 3: Fragmentize basis if needed (for each molecule) and save it as evc,evr,h1e files.
     You will need reference calculations to correct wave-function sign for each LMO.</li>
-<li>Step 4: Calculate transfer integrals and save Hamiltonian in <a href="../soft/TBH.html">this format</a>.
+<li>Step 4: Calculate transfer integrals and save Hamiltonian in <a href="TBH.html">this format</a>.
     For charges, a CG-basis is initialized either pre-calculated or as molecular HOMO/LUMO.
     In the latter case the wave-function sign is corrected at this point.
     The CG Hamiltonian is calculated by projection on CG-basis for all available multimers.
@@ -172,10 +172,10 @@
 <h2><a name="tb.models">Creation and parameterization of tight-binding model</a></h2>
 <ul>
 <li>Use <code>QFT/Models/TB.mw</code></li>
-<li>Create lattice geometry initialization file in <a href="TBgeo.html">this format</a> supplemented with CIF.</li>
-<li>Create TB Hamiltonian initialization file in <a href="TBini.html">this format</a>,
+<li>Create lattice geometry initialization file in <a href="https://cmsos.github.io/tbm/TBgeo.html">this format</a> supplemented with CIF.</li>
+<li>Create TB Hamiltonian initialization file in <a href="https://cmsos.github.io/tbm/TBini.html">this format</a>,
     including list of symmetry-unique transfer integrals, visualized with CIF and picture.</li>
-<li>Save symbolic Hamiltonian in <a href="../soft/TBH.html">this format</a>.</li>
+<li>Save symbolic Hamiltonian in <a href="TBH.html">this format</a>.</li>
 <li>Parameterize this TB Hamiltonian from supercell or cluster calculations, saving the result in the TB Hamiltonian file.</li>
 <li>Derive eigenvectors and eigenvalues at high-symmetry k-points and k-paths.</li>
 <li>Derive a minimal TB model and plot its band structure and DOS.</li>
