@@ -112,7 +112,7 @@
 
 <h2><a name="ecg">Electronic coarse-graining of insulators</a></h2>
 <ul>
-<li>Use <code>ECG.mw</code> or <code>MolMod/LocalizeMO.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
+<li>Use <code>QFT/Models/ECG/ECG.mw</code> or <code>MolMod/LocalizeMO.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
 <li>PBC are supported only at Gamma point (supercell approach).</li>
 <li>Fragmentize system, identify repeating fragments (monomers), and save to file following quantities:
     1) fragments as <code>F=list(list(atom#))</code>;
@@ -147,24 +147,23 @@
     <code>SG=name, nm=number</code></li>
 <li>At the accuracy level of dimer approximation, it is usually enough to consider hydrogen-passivated pi-conjugated backbones instead of entire molecules.</li>
 <li>Load crystal structure and fragmentize molecules if needed,
-    then rationalize site positions and initialize FGS subpackage of FiniteGroups package.</li>
+    then rationalize site positions and initialize FGS subpackage of <a href="https://zhugayevych.me/maple/FiniteGroups/index.html">FiniteGroups package</a>.</li>
 <li>Step 1: Determine nearest neighbors (for molecules, not fragments) and save all symmetry unique dimers in xyz-file.
     Normally only pi-conjugated atoms should be considered.
-    The cutoff distance of about 5~Ao can be used to screen out negligible wave-function overlaps (not for Forster energy transfer).
-    Find a proper supercell size iteratively.</li>
+    The cutoff distance of about 5~Ao can be used to screen out negligible wave-function overlaps (not for Forster energy transfer).</li>
 <li>Step 2: Perform required single point calculations (MOs or excited states)
     for all translationally unique molecules, symmetry-unique dimers,
     and optionally multimers (list of multimers should be provided by user).
     For each calculation save out,evc,evr,evl files for frontier orbitals (let say, 8 MOs per band per monomer + 2 extra orbitals).</li>
 <li>Step 3: Fragmentize basis if needed (for each molecule) and save it as evc,evr,h1e files.
-    You will need reference calculations to correct wave-function sign for each LMO.</li>
+    You will need reference LMOs to correct wave-function sign for each LMO.</li>
 <li>Step 4: Calculate transfer integrals and save Hamiltonian in <a href="TBH.html">this format</a>.
-    For charges, a CG-basis is initialized either pre-calculated or as molecular HOMO/LUMO.
+    For electrons and holes, a CG-basis is initialized either pre-calculated or as molecular HOMO/LUMO.
     In the latter case the wave-function sign is corrected at this point.
     The CG Hamiltonian is calculated by projection on CG-basis for all available multimers.
     Then either mean (default) or most appropriate (user-defined) value is selected for evaluation of transfer integrals.
     Small transfer integrals are discarded for noncontact pairs.
-    Finally, unfold dimers and save the Hamiltonian in dat-file.</li>
+    Finally, unfold symmetry-unique dimers and save the Hamiltonian in dat-file.</li>
 <li>Step 5: Print transfer integrals, calculate hopping amplitudes and band structure.
     The report is saved to txt-file.</li>
 </ul>
