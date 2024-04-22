@@ -10,24 +10,24 @@
 
 <p>Following file types are recognized:</p>
 <ul>
-<li>fhi, fly, gau, lam, mop, mpr, tin, vas &ndash; FHI-aims, GAMESS Firefly, Gaussian, LAMMPS, MOPAC, Molpro, TINKER or VASP input file</li>
-<li>out &ndash; (text) program-specific output file</li>
-<li>xyz,cif &ndash; (text) atomic coordinates</li>
-<li>coo &ndash; (binary) atomic coordinates ::Matrix(3,na)</li>
-<li>md  &ndash; (binary) MD trajectory or set of configurations ::Array(3,na,nconf)</li>
-<li>mdm &ndash; (binary) same as 'md' but grouped into molecules ::Array(3,na,nm,nconf)</li>
-<li>mgf &ndash; (text) file containing MO/NO/NTO for visualization</li>
-<li>pes &ndash; (binary) potential energy surface data</li>
-<li>frcc &ndash; (binary) force constants ::Matrix(3*na,symmetric)</li>
-<li>evl, evla, evlb &ndash; (binary) eigenvalues, alpha- and beta-eigenvalues ::Vector(no)</li>
-<li>evc, evca, evcb &ndash; (binary) eigenvectors ::Matrix(N,no)</li>
-<li>evr &ndash; (binary) bra-eigenvectors = Transpose(evc)*s1e ::Matrix(no,N)</li>
-<li>s1e &ndash; (binary) overlap matrix ::Matrix(N,symmetric)</li>
-<li>h1e &ndash; (binary) one-electron Hamiltonian ::Matrix(N,symmetric)</li>
-<li>rho, rhoa, rhob &ndash; (binary) density matrix ::Matrix(N,symmetric)</li>
-<li>633 &ndash; (binary) Gaussian record 633</li>
+<li><code>fhi,fly,gau,lam,mop,mpr,tin,vas</code> &ndash; FHI-aims, GAMESS Firefly, Gaussian, LAMMPS, MOPAC, Molpro, TINKER or VASP input file</li>
+<li><code>out</code> &ndash; (text) program-specific output file</li>
+<li><code>xyz,cif</code> &ndash; (text) atomic coordinates</li>
+<li><code>coo</code> &ndash; (binary) atomic coordinates ::Matrix(3,na)</li>
+<li><code>md</code>  &ndash; (binary) MD trajectory or set of configurations ::Array(3,na,nconf)</li>
+<li><code>mdm</code> &ndash; (binary) same as 'md' but grouped into molecules ::Array(3,na,nm,nconf)</li>
+<li><code>mgf</code> &ndash; (text) file containing MO/NO/NTO for visualization</li>
+<li><code>pes</code> &ndash; (binary) potential energy surface data</li>
+<li><code>frcc</code> &ndash; (binary) force constants ::Matrix(3*na,symmetric)</li>
+<li><code>evl,evla,evlb</code> &ndash; (binary) eigenvalues, alpha- and beta-eigenvalues ::Vector(no)</li>
+<li><code>evc,evca,evcb</code> &ndash; (binary) eigenvectors ::Matrix(N,no)</li>
+<li><code>evr</code> &ndash; (binary) bra-eigenvectors = Transpose(evc)*s1e ::Matrix(no,N)</li>
+<li><code>s1e</code> &ndash; (binary) overlap matrix ::Matrix(N,symmetric)</li>
+<li><code>h1e</code> &ndash; (binary) one-electron Hamiltonian ::Matrix(N,symmetric)</li>
+<li><code>rho,rhoa,rhob</code> &ndash; (binary) density matrix ::Matrix(N,symmetric)</li>
+<li><code>633</code> &ndash; (binary) Gaussian record 633</li>
 </ul>
-<p>* Symmetric matrices are written as triangular[lower]</p>
+<p>See also <a href="bin.html">binary file format</a>; symmetric matrices are written as triangular[lower].</p>
 
 </body>
 </html>

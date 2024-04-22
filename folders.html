@@ -7,14 +7,21 @@
 <title>Folders structure</title>
 </head>
 <body>
-
-<p>All calculations for a single system should be kept in one folder.
- The standard structure of folders and key auxiliary files is given by "_template" folder.</p>
-<p>The following folders can be scanned for information:
+<p>General rules:
+<ul>
+<li>Any file must be accessible by the following path "/container/systemfolder/folder/.../file",
+ e.g. "/Molecules/benzene/bm/molec_P/wat_B3LYPp2p_freq.out".</li>
+<li>All calculations for a single system should be kept in one system folder.</li>
+<li>Containers allows to separate data by materials class, project, user, access etc.</li>
+<li>The standard structure of folders and key auxiliary files are given by "_template" system folder.</li>
+<li>Only <code>dat</code> and <code>fig</code> folders are backed-up, all other folders should be recomputable.</li>
+</ul></p>
+<p>The following folders can be scanned for information (their names are reserved):
 <ul>
 <li><code>arc/</code> &ndash; input files and other archived files</li>
 <li><code>bin/</code> &ndash; binary files</li>
 <li><code>bm/</code> &ndash; benchmarking folder</li>
+<li><code>chk/</code> &ndash; critical checkpoint files (noncritical ones shuld be kept elsewhere)</li>
 <li><code>dat/</code> &ndash; all textual data generated manually or as high-level postprocessing of standard calculations</li>
 <li><code>em/</code> &ndash; geometry relaxation files</li>
 <li><code>fig/</code> &ndash; figures</li>
@@ -28,18 +35,23 @@
 <li><code>dat/main.dat</code> &ndash; contains machine-readable key parameters of the system in the format <code>key=value</code>:
  <ul>
  <li><code>name,name2</code> &ndash; name and alternative names of the system</li>
+ <li><code>pubchem</code> &ndash; <a href="https://pubchem.ncbi.nlm.nih.gov">PubChem</a> identifier</li>
+ <li><code>SMILES</code> &ndash; useful if pubchem ID is undefined</li>
  <li><code>Q</code> &ndash; default charge (if appropriate it should correspond to the singlet spin state)</li>
  <li><code>SG</code> &ndash; symmetry group (maximum reasonable symmetry)</li>
  <li><code>CO</code> &ndash; definition of canonic orientation of molecule or crystal</li>
  <li><code>base</code> &ndash; &pi;-conjugated backbone as list of atom numbers</li>
+ <li><code>frags,frags2</code> &ndash; fragmentations</li>
  <li><code>perm_other</code> &ndash; map atom ordering perm_other[other]=this_folder_files (ordering of atom coordinates must identical within this data folder)</li>
  <li><code>d0,d1,d2</code> &ndash; definitions of named flexible dihedrals (as [i,j,k,l])</li>
  <li><code>ds</code> &ndash; definition of all flexible dihedrals (as list of lists)</li>
+ <li><code>sds</code> &ndash; the same for side chains to separate them out of <code>ds</code></li>
  <li><code>tds1,tds2</code> &ndash; definitions of named terminal dihedrals (as [i_terminal,i_dihedral,i_tobereplaced])</li>
  <li><code>tds</code> &ndash; definition of all terminal dihedrals</li>
  <li><code>boxsize</code> &ndash; size of simulation box</li>
  </ul></li>
 <li><code>dat/molec.xyz</code> &ndash; contains most relevant geometry, optionally topology, and also SG and CO records to overwrite 'main.dat' settings</li>
+<li><code>dat/cryst.xyz</code> &ndash; the same for crystal</li>
 </ul></p>
 
 </body>
