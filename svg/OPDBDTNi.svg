@@ -42,6 +42,6 @@ text.S { fill:rgb(255,229,22); stroke:rgb(255,229,22) }
 <text x='90.4' y='118.9' font-size='16' class="H">H</text>
 <text x='164.6' y='110.6' font-size='16' class="S">S</text>
 <text x='164.6' y='31.0' font-size='16' class="S">S</text>
-<text x='114.7' y='70.8' font-size='16' fill='rgb(79,209,79)'>Ni</text>
+<text x='123.7' y='70.8' font-size='16' fill='rgb(79,209,79)'>Ni</text>
 </g>
 </svg>
