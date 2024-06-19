@@ -1,0 +1,31 @@
+# CO cryst optimized by PBE-D3paw900
+data_nolabel
+_cell_length_a                   5.58540492
+_cell_length_b                   5.58540492
+_cell_length_c                   5.58540492
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_symmetry_space_group_name_H-M   P213
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+y,z,x
+z,x,y
+x+1/2,-y+1/2,-z
+y+1/2,-z+1/2,-x
+z+1/2,-x+1/2,-y
+-x,y+1/2,-z+1/2
+-y,z+1/2,-x+1/2
+-z,x+1/2,-y+1/2
+-x+1/2,-y,z+1/2
+-y+1/2,-z,x+1/2
+-z+1/2,-x,y+1/2
+loop_
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+ C    -.03841641  -.03841641  -.03841641
+ O     .07968066   .07968066   .07968066
