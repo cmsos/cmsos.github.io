@@ -1,0 +1,37 @@
+# benzeneF3 cryst optimized by PBE-D3paw900
+data_nolabel
+_cell_length_a                   6.20235125
+_cell_length_b                  11.93253636
+_cell_length_c                   7.47872236
+_cell_angle_alpha                90
+_cell_angle_beta                 95.8948331
+_cell_angle_gamma                90
+_cell_formula_units_Z            4
+_symmetry_space_group_name_H-M   I12/a1
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+1/2,y,-z
+-x+1/2,-y-1/2,-z+1/2
+x,-y-1/2,z+1/2
+-x,-y,-z
+x-1/2,-y,z
+x-1/2,y+1/2,z+1/2
+-x-1,y+1/2,-z+1/2
+loop_
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+ C     .42651924  -.18679843   .07558230
+ C     .25000000  -.12528175  -.00000000
+ C     .07348076  -.18679843  -.07558230
+ C     .06609055  -.30312156  -.07771963
+ C     .25000000  -.35811490  -.00000000
+ C     .43390945  -.30312156   .07771963
+ F     .60272026  -.12929012   .15227766
+ H     .25000000  -.03424411  -.00000000
+ F    -.10272026  -.12929012  -.15227766
+ H    -.07509927  -.34867349  -.13719397
+ F     .25000000  -.47217950  -.00000000
+ H     .57509927  -.34867349   .13719397

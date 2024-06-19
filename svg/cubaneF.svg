@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="Layer_1"
+   width="130"
+   height="140"
+   viewBox="0 0 130 140"
+   style="overflow:visible;enable-background:new 0 0 130 140;"
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="molec.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><metadata
+   id="metadata116"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs114" /><sodipodi:namedview
+   inkscape:window-height="1051"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:zoom="2.7002507"
+   inkscape:cx="64.623629"
+   inkscape:cy="70.178669"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:current-layer="Layer_1"
+   inkscape:showpageshadow="2"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:window-maximized="1" />
+<title>cubaneF6/molec_B3LYPa3p.xyz</title>
+<path
+   style="fill:#231f20"
+   d="M 51.933975,111.7408 L 44.952425,109.88735 L 45.521475,108.3683 L 52.171475,110.12485 L 51.933975,111.7408 z "
+   id="polygon3" />
+<path
+   style="fill:#231f20"
+   d="M 52.552425,107.55985 L 46.519925,105.9458 L 47.136475,104.42485 L 52.741475,105.9458 L 52.552425,107.55985 z "
+   id="polygon5" />
+<path
+   style="fill:#231f20"
+   d="M 53.121475,103.3333 L 48.133975,102.0033 L 48.752425,100.4833 L 53.358975,101.7183 L 53.121475,103.3333 z "
+   id="polygon7" />
+<path
+   style="fill:#231f20"
+   d="M 53.691475,99.1058 L 49.748975,98.05985 L 49.844925,97.82235 L 53.882425,97.82235 L 53.691475,99.1058 z "
+   id="polygon9" />
+<path
+   style="fill:#231f20"
+   d="M 54.878975,90.69735 L 52.932425,90.17485 L 53.548975,88.6558 L 55.116475,89.0833 L 54.878975,90.69735 z "
+   id="polygon11" />
+<path
+   style="fill:#231f20"
+   d="M 107.93743,27.23735 L 113.06648,32.3683 L 111.78398,33.3658 L 106.93898,28.5683 L 107.93743,27.23735 z "
+   id="polygon13" />
+<path
+   style="fill:#231f20"
+   d="M 105.03898,31.0858 L 109.26648,35.31235 L 107.98398,36.26235 L 104.04148,32.3683 L 105.03898,31.0858 z "
+   id="polygon15" />
+<path
+   style="fill:#231f20"
+   d="M 102.14148,34.8858 L 105.46648,38.2108 L 104.13743,39.1608 L 101.14493,36.2158 L 102.14148,34.8858 z "
+   id="polygon17" />
+<path
+   style="fill:#231f20"
+   d="M 99.244925,38.73235 L 101.61993,41.10735 L 100.33743,42.05735 L 98.246475,40.0158 L 99.244925,38.73235 z "
+   id="polygon19" />
+<path
+   style="fill:#231f20"
+   d="M 96.346475,42.53235 L 97.819925,44.0058 L 96.488975,45.0033 L 95.349925,43.86235 L 96.346475,42.53235 z "
+   id="polygon21" />
+<path
+   style="fill:#231f20"
+   d="M 45.332425,23.8658 L 52.361475,22.01235 L 52.552425,23.6283 L 45.948975,25.3858 L 45.332425,23.8658 z "
+   id="polygon23" />
+<path
+   style="fill:#231f20"
+   d="M 47.232425,28.42485 L 52.978975,26.85735 L 53.216475,28.4733 L 47.848975,29.94485 L 47.232425,28.42485 z "
+   id="polygon25" />
+<path
+   style="fill:#231f20"
+   d="M 49.132425,32.9858 L 53.644925,31.74985 L 53.833975,33.3658 L 49.748975,34.45735 L 49.132425,32.9858 z "
+   id="polygon27" />
+<path
+   style="fill:#231f20"
+   d="M 51.032425,37.4983 L 54.261475,36.6433 L 54.452425,38.25735 L 51.648975,39.0183 L 51.032425,37.4983 z "
+   id="polygon29" />
+<path
+   style="fill:#231f20"
+   d="M 52.932425,42.05735 L 54.878975,41.5358 L 55.116475,43.14985 L 53.548975,43.5783 L 52.932425,42.05735 z "
+   id="polygon31" />
+<path
+   style="fill:#231f20"
+   d="M 113.87493,100.67235 L 108.74493,105.8033 L 107.74648,104.5208 L 112.59148,99.67485 L 113.87493,100.67235 z "
+   id="polygon33" />
+<path
+   style="fill:#231f20"
+   d="M 109.88398,97.53735 L 105.65743,101.7658 L 104.65898,100.4833 L 108.60148,96.58735 L 109.88398,97.53735 z "
+   id="polygon35" />
+<path
+   style="fill:#231f20"
+   d="M 105.84648,94.44985 L 102.56993,97.7283 L 101.57148,96.4458 L 104.56398,93.4533 L 105.84648,94.44985 z "
+   id="polygon37" />
+<path
+   style="fill:#231f20"
+   d="M 101.80898,91.36235 L 99.433975,93.73735 L 98.437425,92.4083 L 100.52648,90.3658 L 101.80898,91.36235 z "
+   id="polygon39" />
+<path
+   style="fill:#231f20"
+   d="M 97.771475,88.27485 L 96.346475,89.69985 L 95.349925,88.4183 L 96.488975,87.2783 L 97.771475,88.27485 z "
+   id="polygon41" />
+<path
+   style="fill:#231f20"
+   d="M 56.161475,84.1433 L 55.353975,84.94985 L 54.546475,84.47485 L 54.546475,60.10735 L 56.161475,60.10735 L 56.161475,84.1433 z "
+   id="polygon43" />
+<path
+   style="fill:#231f20"
+   d="M 54.546475,48.61235 L 55.353975,47.28235 L 56.161475,48.0908 L 56.161475,54.2183 L 54.546475,54.2183 L 54.546475,48.61235 z "
+   id="polygon45" />
+<path
+   style="fill:#231f20"
+   d="M 55.544925,85.7583 L 55.353975,84.94985 L 56.161475,84.1433 L 70.982425,84.1433 L 70.982425,85.7583 L 55.544925,85.7583 z "
+   id="polygon47" />
+<path
+   style="fill:#231f20"
+   d="M 92.262425,84.1433 L 93.069925,84.94985 L 89.744925,85.7583 L 76.919925,85.7583 L 76.919925,84.1433 L 92.262425,84.1433 z "
+   id="polygon49" />
+<path
+   style="fill:#231f20"
+   d="M 93.876475,46.47485 L 93.069925,47.28235 L 89.744925,48.0908 L 84.328975,48.0908 L 85.469925,46.47485 L 93.876475,46.47485 z "
+   id="polygon51" />
+<path
+   style="fill:#231f20"
+   d="M 56.161475,48.0908 L 55.353975,47.28235 L 55.164925,46.47485 L 75.351475,46.47485 L 74.591475,48.0908 L 56.161475,48.0908 z "
+   id="polygon53" />
+<path
+   style="fill:#231f20"
+   d="M 93.876475,85.47235 L 93.069925,84.94985 L 92.262425,84.1433 L 92.262425,48.61235 L 93.069925,47.28235 L 93.876475,46.47485 L 93.876475,85.47235 z "
+   id="polygon55" />
+
+
+
+
+
+
+
+
+<path
+   style="fill:#231f20"
+   d="M 55.164925,46.47485 L 55.353975,47.28235 L 54.546475,48.61235 L 39.583975,56.3558 L 36.258975,57.16235 L 36.448975,56.1183 L 55.164925,46.47485 z "
+   id="polygon89" />
+<path
+   style="fill:#231f20"
+   d="M 89.744925,48.0908 L 93.069925,47.28235 L 92.262425,48.61235 L 74.782425,57.63735 L 73.974925,57.16235 L 76.682425,54.8358 L 89.744925,48.0908 z "
+   id="polygon91" />
+<path
+   style="fill:#231f20"
+   d="M 89.744925,85.7583 L 93.069925,84.94985 L 93.876475,85.47235 L 75.162425,95.16235 L 73.974925,94.8783 L 74.782425,93.54735 L 89.744925,85.7583 z "
+   id="polygon93" />
+<path
+   style="fill:#231f20"
+   d="M 54.546475,84.47485 L 55.353975,84.94985 L 55.544925,85.7583 L 39.583975,94.0708 L 36.258975,94.8783 L 37.066475,93.54735 L 54.546475,84.47485 z "
+   id="polygon95" />
+<path
+   style="fill:#231f20"
+   d="M 37.066475,93.54735 L 36.258975,94.8783 L 35.452425,94.49735 L 35.452425,57.5433 L 36.258975,57.16235 L 37.066475,57.96985 L 37.066475,93.54735 z "
+   id="polygon97" />
+<path
+   style="fill:#231f20"
+   d="M 36.639925,95.68485 L 36.258975,94.8783 L 39.583975,94.0708 L 73.166475,94.0708 L 73.974925,94.8783 L 73.451475,95.68485 L 36.639925,95.68485 z "
+   id="polygon99" />
+<path
+   style="fill:#231f20"
+   d="M 73.451475,56.3558 L 73.974925,57.16235 L 73.166475,57.96985 L 37.066475,57.96985 L 36.258975,57.16235 L 39.583975,56.3558 L 73.451475,56.3558 z "
+   id="polygon101" />
+<path
+   style="fill:#231f20"
+   d="M 74.782425,93.54735 L 73.974925,94.8783 L 73.166475,94.0708 L 73.166475,57.96985 L 73.974925,57.16235 L 74.782425,57.63735 L 74.782425,93.54735 z "
+   id="polygon103" />
+<path
+   style="fill:#231f20"
+   d="M 83.094925,34.0783 L 89.412425,37.68735 L 76.682425,54.8358 L 73.974925,57.16235 L 73.451475,56.3558 L 83.094925,34.0783 z "
+   id="polygon105" />
+<path
+   style="fill:#231f20"
+   d="M 16.214925,42.2483 L 21.344925,37.1183 L 36.448975,56.1183 L 36.258975,57.16235 L 35.452425,57.5433 L 16.214925,42.2483 z "
+   id="polygon107" />
+<path
+   style="fill:#231f20"
+   d="M 20.632425,115.63485 L 15.453975,110.5058 L 35.452425,94.49735 L 36.258975,94.8783 L 36.639925,95.68485 L 20.632425,115.63485 z "
+   id="polygon109" />
+<path
+   style="fill:#231f20"
+   d="M 90.076475,115.5408 L 83.807425,119.14985 L 73.451475,95.68485 L 73.974925,94.8783 L 75.162425,95.16235 L 90.076475,115.5408 z "
+   id="polygon111" />
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+   x="112.2118"
+   y="27.404863"
+   id="text1"><tspan
+     sodipodi:role="line"
+     id="tspan1"
+     x="112.2118"
+     y="27.404863"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="84.749672"
+   y="31.232904"
+   id="text1-5"><tspan
+     sodipodi:role="line"
+     id="tspan1-9"
+     x="84.749672"
+     y="31.232904"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="112.89799"
+   y="119.93069"
+   id="text1-1"><tspan
+     sodipodi:role="line"
+     id="tspan1-5"
+     x="112.89799"
+     y="119.93069"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="85.529518"
+   y="134.97173"
+   id="text1-3"><tspan
+     sodipodi:role="line"
+     id="tspan1-3"
+     x="85.529518"
+     y="134.97173"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="40.682476"
+   y="131.04634"
+   id="text1-9"><tspan
+     sodipodi:role="line"
+     id="tspan1-6"
+     x="40.682476"
+     y="131.04634"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="6.0919824"
+   y="131.67694"
+   id="text1-6"><tspan
+     sodipodi:role="line"
+     id="tspan1-8"
+     x="6.0919824"
+     y="131.67694"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="6.9072785"
+   y="38.05563"
+   id="text1-52"><tspan
+     sodipodi:role="line"
+     id="tspan1-0"
+     x="6.9072785"
+     y="38.05563"
+     style="font-size:21.3333px">F</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:21.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;overflow:visible;fill:#000000;fill-opacity:1;stroke:none"
+   x="40.837296"
+   y="21.277647"
+   id="text1-7"><tspan
+     sodipodi:role="line"
+     id="tspan1-7"
+     x="40.837296"
+     y="21.277647"
+     style="font-size:21.3333px">F</tspan></text></svg>

@@ -70,7 +70,8 @@
 <li>Set convergence criteria according to the following guidelines:
   <ul>
   <li>Default EDIFF=1e-4 and tightened EDIFFG=1e-4 (0.1 meV) should give geometry with 1% accuracy and final gradients of the order of tens meV/Ao.</li>
-  <li>To improve accuracy set EDIFFG=1e-5 and maybe EDIFF=1e-5.</li>
+  <li>For more robust convergence, option <code>tol=-1</code> sets EDIFF=1e-5, EDIFFG=1e-4.</li>
+  <li>Set EDIFFG=1e-5 to improve accuracy and get gradients below 10 meV/Ao (option <code>tol=-2</code> sets EDIFF=1e-6, EDIFFG=1e-5).</li>
   <li>For numerically precise geometry optimization set EDIFF=1e-6 and EDIFFG=-1e-3 (1 meV/Ao).</li>
   </ul></li>
 <li>For large unit cells, accuracy can be increased gradually in the following order:

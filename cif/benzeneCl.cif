@@ -1,0 +1,37 @@
+# benzeneCl cryst optimized by PBE-D3paw600
+data_nolabel
+_cell_length_a     13.55499978
+_cell_length_b     11.16656926
+_cell_length_c      7.29263546
+_cell_angle_alpha   90
+_cell_angle_beta    90
+_cell_angle_gamma   90
+_cell_formula_units_Z  8
+_symmetry_space_group_name_H-M  Pbcn
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x+1/2,-y+1/2,z+1/2
+-x+1/2,y+1/2,z
+x,1-y,z+1/2
+x+1/2,-y+1/2,-z
+1-x,y,-z+1/2
+1-x,1-y,-z
+x+1/2,y+1/2,-z+1/2
+loop_
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+  C     .22473110   .03216362  -.05435057
+  C     .12452010   .05124692  -.08789948
+  C     .07803320   .15483111  -.02393221
+  C     .13214238   .23987514   .07446401
+  C     .23266913   .22263842   .10772599
+  C     .27779860   .11868079   .04216876
+  H     .26141719  -.04847459  -.10262907
+  H     .08330136  -.01572012  -.16507700
+  H     .00005164   .17009945  -.05150866
+  H     .09635780   .32093875   .12481138
+  H     .27556603   .28870392   .18325047
+  Cl    .40264109   .09537193   .08330923

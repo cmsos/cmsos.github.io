@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="371px" height="353px" viewBox='0 0 371 353'>
+<title>Alq3/molec_CAM-B3LYPp2p.xyz</title>
+	<g fill="none" stroke="#000" stroke-width="3">
+		<path d="m32,9 h-23 v332 h23 M302,9 h23 v332 h-23"/>
+		<path d="m48,185 v83 l71.88,41.5 71.88,-41.5 v-83 l-71.88,-41.5 z m10,6 v71 m61.88,37.5 61.488,-35.5"/>
+		<path d="m248.05,152.5 -56.29,32.5 -71.88,-41.5 v-83 l71.88,-41.5 71.88,41.5 v67 m-10,0 v-61 m-61.488,-35.5 -61.488,35.5 m0,71 61.488,35.5"/>
+		<path d="m279,158 58,52 m-4,29 -43,57 M191.76,268 l72,36"/>
+	</g>
+	<g font-size="32" font-family="sans-serif">
+		<text x="252" y="158">N</text>
+		<text x="336" y="233">Al</text>
+		<text x="267" y="322">O</text>
+		<text x="335" y="339">3</text>
+	</g>
+</svg>
