@@ -14,8 +14,8 @@
 <li><a href="#molcry.geo.opt">Molecular crystal geometry optimization</a></li>
 <li><a href="#molcry.geo.det">Determination of molecular crystal geometry from MD snapshot of a large supercell</a></li>
 <li><a href="#ecg">Electronic coarse-graining of insulators</a></li>
-<li><a href="#molcry.ecg">Calculation of coarse-grained electronic Hamiltonian for molecular crystal in multimer approximation</a></li>
-<li><a href="#tb.models">Creation and parameterization of tight-binding model</a></li>
+<li><a href="#molcry.ecg">Calculation of coarse-grained electronic Hamiltonian for molecular crystals</a></li>
+<li><a href="#tb.models">Creation and parametrization of tight-binding models</a></li>
 </ul>
 <hr>
 
@@ -139,26 +139,48 @@
     4) fragments to LMOs map as <code>f2o=list(list(LMO#))</code>;
     5) list of coarse-grained MOs <code>MOs=list(MO#)</code>;
     6) localization method as <code>method=string</code>.</li>
+<li>There is a code to print the Hamiltonian and overlaps.
+    Such files are labeled with "_HS". The output contains list of LMOs for which the matrix elements are printed.
+    The first row and column of the printed table contains LMO energies in eV.
+    The second and third columns give fragment and orbital numbers.
+    The rest of the table are matrix elements (in eV for Hamiltonian).</li>
+<li>If needed, create reference LMOs for a fragment by cutting the geometry and basis. Save out,evc,evr,h1e.</li>
 </ul>
 
-<h2><a name="molcry.ecg">Calculation of coarse-grained electronic Hamiltonian for molecular crystal in multimer approximation</a></h2>
+<h2><a name="molcry.ecg">Calculation of coarse-grained electronic Hamiltonian for molecular crystals</a></h2>
 <ul>
 <li>Use <code>MolMod/_exam_Heff.mw</code>, see <a href="https://zhugayevych.me/maple/MolMod/index.html">MolMod package</a>.</li>
-<li>Make sure that the crystal structure file contains information about symmetry and partitioning of the crystal into molecules:
-    <code>SG=name, nm=number</code></li>
-<li>At the accuracy level of dimer approximation, it is usually enough to consider hydrogen-passivated pi-conjugated backbones instead of entire molecules.</li>
-<li>Load crystal structure and fragmentize molecules if needed,
-    then rationalize site positions and initialize FGS subpackage of <a href="https://zhugayevych.me/maple/FiniteGroups/index.html">FiniteGroups package</a>.</li>
-<li>Step 1: Determine nearest neighbors (for molecules, not fragments) and save all symmetry unique dimers in xyz-file.
-    Normally only pi-conjugated atoms should be considered.
-    The cutoff distance of about 5~Ao can be used to screen out negligible wave-function overlaps (not for Forster energy transfer).</li>
-<li>Step 2: Perform required single point calculations (MOs or excited states)
-    for all translationally unique molecules, symmetry-unique dimers,
-    and optionally multimers (list of multimers should be provided by user).
-    For each calculation save out,evc,evr,evl files for frontier orbitals (let say, 8 MOs per band per monomer + 2 extra orbitals).</li>
-<li>Step 3: Fragmentize basis if needed (for each molecule) and save it as evc,evr,h1e files.
-    You will need reference LMOs to correct wave-function sign for each LMO.</li>
-<li>Step 4: Calculate transfer integrals and save Hamiltonian in <a href="TBH.html">this format</a>.
+<li>Current implementation is limited to: 1) the same ECG basis for all monomers, 2) nondegenerate electronic states.
+    For π-conjugated systems, condition (1) implies that all monomers have the same π-conjugated backbone and are interconnected by single bonds.</li>
+<li>Load crystal structure, monomerize it,
+    then rationalize site positions and initialize FGS subpackage of <a href="https://zhugayevych.me/maple/FiniteGroups/index.html">FiniteGroups package</a>.
+    Important input parameters:
+    <ul>
+    <li><code>SG</code> space group,</li>
+    <li><code>M</code> matrix of translation vectors augmented to 3D,</li>
+    <li><code>nm</code> number of molecules/polymers in the unit cell,</li>
+    <li><code>F</code> fragmentation of each molecule/polymer.</li>
+    </ul></li>
+<li>Step 1: Generate symmetry-unique multimers or supercell here or elsewhere (e.g. <code>Polymers.mw</code>) as a set of xyz-files.
+    In the simplest approximation, it is enough to consider only
+    1) nearest-neighbor dimers (up to 5~Ao between π-conjugated atoms),
+    2) hydrogen-passivated π-conjugated backbones instead of entire molecules.</li>
+<li>Step 2: Calculate MOs of multimers/supercells and all translationally unique molecules.
+    For each calculation save out,evc,evr,evl files for frontier orbitals
+    (keep enough number of MOs per monomer or save entire evc and s1e files).</li>
+<li>Step 3: Generate translationally-unique ECG-projection basis for each translationally unique monomer and save it as out,evc,evr,evl files.
+    This can be done by ECG of all translationally-unique molecules using some reference orbitals.
+    Reference orbitals can be taken either from MO of the monomer or from ECG of an oligomer.
+    If monomer=molecule, Step 3 can be omitted.</li>
+<li>Step 4: Calculate effective ECG Hamiltonian using <a href="https://zhugayevych.me/maple/MolMod/LocalizeMO.html">MultimerH</a> program
+    and save it in <a href="TBH.html">this format</a>.
+    Important input parameters:
+    <ul>
+    <li><code>typ,nof</code> electron/hole and number of orbitals per monomer to define the projection basis,</li>
+    <li><code>rmax,na3m,nf3m</code> </li>
+    <li><code></code> </li>
+    <li><code></code> </li>
+    </ul></li>
     For electrons and holes, a CG-basis is initialized either pre-calculated or as molecular HOMO/LUMO.
     In the latter case the wave-function sign is corrected at this point.
     The CG Hamiltonian is calculated by projection on CG-basis for all available multimers.
@@ -169,7 +191,7 @@
     The report is saved to txt-file.</li>
 </ul>
 
-<h2><a name="tb.models">Creation and parameterization of tight-binding model</a></h2>
+<h2><a name="tb.models">Creation and parametrization of tight-binding models</a></h2>
 <ul>
 <li>Use <code>QFT/Models/TB.mw</code></li>
 <li>Create lattice geometry initialization file in <a href="https://cmsos.github.io/tbm/TBgeo.html">this format</a> supplemented with CIF.</li>
